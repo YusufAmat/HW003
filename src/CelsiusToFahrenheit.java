@@ -22,8 +22,9 @@ public class CelsiusToFahrenheit {
              86 F --> 30 C
          */
         Scanner scanner = new Scanner(System.in);
+        boolean devamMi= true;
 
-        while (true) {
+        while (devamMi) {
             System.out.println("*******SICAKLIK DONUSUM UYGULAMASINA HOSGELDINIZ*******");
             System.out.println("Santigrat´ tan  Fahrenheit´ a donusturmek icin 1´e, \n"
                     + "Fahrenheit´ tan Santigrat´ a donusturmek icin 2´ e basiniz");
@@ -43,6 +44,7 @@ public class CelsiusToFahrenheit {
                     double sicaklikFahrenheit1 = scanner.nextDouble();
                     double sicaklikSantigrat1 = (sicaklikFahrenheit1 - 32) / 1.8;
                     System.out.println(sicaklikFahrenheit1 + " F --> " + sicaklikSantigrat1 + " C");
+                    devamMi = false;
                     break;
 
             }
