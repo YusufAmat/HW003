@@ -20,9 +20,9 @@ public class Stars {
          */
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Lutfen yildiz adedini giriniz : ");
+        System.out.print("Lütfen yildiz adedini giriniz : ");
         int yildizAdedi = scanner.nextInt();
-        System.out.print("Lutfen sütun adedini giriniz : ");
+        System.out.print("Lütfen sütun adedini giriniz : ");
         int sutunAdedi = scanner.nextInt();
 
         for (int i = 1; i <= yildizAdedi; i++) {
