@@ -31,22 +31,19 @@ public class CelsiusToFahrenheit {
             int secim = scanner.nextInt();
 
             switch (secim) {
-
-                case 1:
+                case 1 -> {
                     System.out.print("Sicakligi Santigrat olarak giriniz, C : ");
                     double sicaklikSantigrat = scanner.nextDouble();
                     double sicaklikFahrenheit = (sicaklikSantigrat * 1.8) + 32;
                     System.out.println(sicaklikSantigrat + " C --> " + sicaklikFahrenheit + " F");
-                    break;
-
-                case 2:
+                }
+                case 2 -> {
                     System.out.print("Sicakligi Fahrenheit olarak giriniz, F : ");
                     double sicaklikFahrenheit1 = scanner.nextDouble();
                     double sicaklikSantigrat1 = (sicaklikFahrenheit1 - 32) / 1.8;
                     System.out.println(sicaklikFahrenheit1 + " F --> " + sicaklikSantigrat1 + " C");
                     devamMi = false;
-                    break;
-
+                }
             }
             System.out.println("\n----------------------------------------");
         }
